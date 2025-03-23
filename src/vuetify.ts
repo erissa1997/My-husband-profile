@@ -3,6 +3,7 @@ import "vuetify/styles/main.css";
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
+import colors from "vuetify/util/colors";
 
 export const vuetify = createVuetify({
   components,
@@ -13,15 +14,16 @@ export const vuetify = createVuetify({
       customTheme: {
         dark: false,
         colors: {
-          primary: "#E98E16",
-          secondary: "#CB351A",
-          accent: "#AC0E0D",
-          background: "#e8f4fc",
-          surface: "#FFFFFF",
-          error: "#FF5252",
-          info: "#2196F3",
-          success: "#4CAF50",
-          warning: "#FFC107",
+          primary: colors.deepOrange.base,
+          secondary: colors.deepOrange.darken4,
+          accent: colors.deepOrange.accent3,
+          background: colors.yellow.lighten5,
+          surface: colors.orange.lighten4,
+          error: colors.deepOrange.darken3,
+          info: colors.lightBlue.base,
+          success: colors.green.base,
+          warning: colors.red.base,
+          text: colors.shades.black,
         },
       },
     },
