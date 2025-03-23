@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../pages/HomePage.vue";
-// import CurriculumVitae from "@/pages/CurriculumVitae.vue";
+import Home from "../pages/HomePage.vue";
+import CurriculumVitae from "../pages/CurriculumVitaePage.vue";
 // import BlogPage from "@/pages/BlogPage.vue";
 // import ConsultingPage from "@/pages/ConsultingPage.vue";
 
@@ -8,10 +8,24 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: HomePage,
+    component: Home,
     meta: {
       title: "Home",
     },
+  },
+  {
+    path: "/cv",
+    name: "CurriculumVitae",
+    component: CurriculumVitae,
+    meta: {
+      title: "CurriculumVitae",
+    },
+    // path: "/blog",
+    // name: "blog",
+    // component: Blog,
+    // meta: {
+    //   title: "Blog",
+    // },
   },
 ];
 
