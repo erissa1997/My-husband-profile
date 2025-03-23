@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "./_variables.scss";
+@use "../scss/_variables.scss" as variables;
 
 // Global styles
 html,
@@ -7,31 +7,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: $snow;
-  color: $charcoal;
+  background-color: variables.$snow;
+  color: variables.$charcoal;
 }
 
 // Utility classes
 .text-primary {
-  color: $primary !important;
+  color: variables.$primary !important;
 }
 .text-secondary {
-  color: $secondary !important;
+  color: variables.$secondary !important;
 }
 .text-accent {
-  color: $accent !important;
+  color: variables.$accent !important;
 }
 .bg-primary {
-  background-color: $primary !important;
+  background-color: variables.$primary !important;
 }
 .bg-secondary {
-  background-color: $secondary !important;
+  background-color: variables.$secondary !important;
 }
 .bg-accent {
-  background-color: $accent !important;
+  background-color: variables.$accent !important;
 }
 .bg-snow {
-  background-color: $snow !important;
+  background-color: variables.$snow !important;
 }
 
 // Section styling
@@ -42,21 +42,21 @@ body {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: $crimson;
+    color: variables.$crimson;
   }
 
   &__subtitle {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
-    color: $vermilion;
+    color: variables.$vermilion;
   }
 }
 
 // Animation classes
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity $transition-medium ease;
+  transition: opacity variables.$transition-medium ease;
 }
 
 .fade-enter-from,
@@ -66,7 +66,7 @@ body {
 
 .slide-up-enter-active,
 .slide-up-leave-active {
-  transition: transform $transition-medium ease;
+  transition: transform variables.$transition-medium ease;
 }
 
 .slide-up-enter-from,
@@ -79,7 +79,8 @@ body {
 .custom-card {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform $transition-fast, box-shadow $transition-fast;
+  transition: transform variables.$transition-fast,
+    box-shadow variables.$transition-fast;
 
   &:hover {
     transform: translateY(-5px);
@@ -98,7 +99,7 @@ body {
     bottom: 0;
     left: 50%;
     width: 2px;
-    background-color: $orange;
+    background-color: variables.$orange;
     transform: translateX(-50%);
   }
 
@@ -113,7 +114,7 @@ body {
       left: 50%;
       width: 16px;
       height: 16px;
-      background-color: $crimson;
+      background-color: variables.$crimson;
       border-radius: 50%;
       transform: translateX(-50%);
     }
@@ -124,11 +125,11 @@ body {
 .social-icon {
   font-size: 1.5rem;
   margin: 0 0.5rem;
-  color: $orange;
-  transition: color $transition-fast;
+  color: variables.$orange;
+  transition: color variables.$transition-fast;
 
   &:hover {
-    color: $crimson;
+    color: variables.$crimson;
   }
 }
 
