@@ -2,7 +2,7 @@
   <div class="profile-section">
     <v-row align="center">
       <v-col cols="12" md="4" class="text-center">
-        <v-avatar size="240" class="profile-avatar mb-4">
+        <v-avatar size="240" class="elevation-4 border-thin mb-4">
           <v-img
             src="../../../public/assets/images/sample-profile.jpeg"
             alt="Profile Image"
@@ -11,15 +11,15 @@
       </v-col>
 
       <v-col cols="12" md="8">
-        <h1 class="text-h3 mb-4 text-primary">Thomas Rodriges Crespo</h1>
+        <h1 class="text-h3 mb-4 text-accent">Thomas Rodriges Crespo</h1>
 
         <div class="self-introduction mb-6">
-          <h2 class="text-h5 mb-2 text-secondary">Self Introduction</h2>
+          <h2 class="text-h5 mb-2 text-accent">Self Introduction</h2>
           <p class="text-body-1">Sample</p>
         </div>
 
         <div class="professional-introduction">
-          <h2 class="text-h5 mb-2 text-secondary">Professional Introduction</h2>
+          <h2 class="text-h5 mb-2 text-accent">Professional Introduction</h2>
           <p class="text-body-1">sample</p>
         </div>
       </v-col>
@@ -28,10 +28,3 @@
 </template>
 
 <script setup lang="ts"></script>
-
-<style lang="scss" scoped>
-.profile-avatar {
-  border: 4px solid variables.$primary;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-</style>

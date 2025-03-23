@@ -1,5 +1,5 @@
 <template>
-  <v-footer app color="surface" class="py-4">
+  <v-footer app color="secondary" class="py-4 border-t-thin">
     <v-container>
       <div
         class="d-flex flex-column flex-md-row justify-space-between align-center"
@@ -39,9 +39,3 @@ const socialIcons = [
   { name: "Email", icon: "mdi-email", link: "mailto:contact@example.com" },
 ];
 </script>
-
-<style lang="scss" scoped>
-.v-footer {
-  border-top: 1px solid rgba(variables.$primary, 0.2);
-}
-</style>

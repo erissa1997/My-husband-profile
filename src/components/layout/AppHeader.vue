@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="surface" elevation="1">
+  <v-app-bar app color="secondary" elevation="1" class="border-b-thin">
     <v-container class="d-flex align-center">
       <v-app-bar-title class="text-primary font-weight-bold">
         <router-link to="/" class="text-decoration-none text-primary">
@@ -14,7 +14,7 @@
   </v-app-bar>
 
   <!-- Navigation Drawer -->
-  <v-navigation-drawer v-model="drawer" temporary>
+  <v-navigation-drawer v-model="drawer" temporary color="secondary">
     <v-list>
       <v-list-item
         v-for="item in navigationItems"
@@ -46,9 +46,3 @@ const navigationItems = [
   },
 ];
 </script>
-
-<style lang="scss" scoped>
-.v-app-bar {
-  border-bottom: 1px solid rgba(variables.$primary, 0.2);
-}
-</style>
