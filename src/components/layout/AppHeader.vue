@@ -49,6 +49,6 @@ const navigationItems = [
 
 <style lang="scss" scoped>
 .v-app-bar {
-  border-bottom: 1px solid rgba($orange, 0.2);
+  border-bottom: 1px solid rgba(variables.$orange, 0.2);
 }
 </style>

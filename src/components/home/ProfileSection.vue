@@ -32,7 +32,7 @@
 
 <style lang="scss" scoped>
 .profile-avatar {
-  border: 4px solid $orange;
+  border: 4px solid variables.$orange;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 </style>
