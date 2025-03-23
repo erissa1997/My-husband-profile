@@ -31,31 +31,20 @@
   </v-navigation-drawer>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from "vue";
+<script setup lang="ts">
+import { ref } from "vue";
 
-export default defineComponent({
-  name: "AppHeader",
-  setup() {
-    const drawer = ref(false);
-
-    const navigationItems = [
-      { title: "Home", route: "/", icon: "mdi-home" },
-      { title: "Curriculum Vitae", route: "/cv", icon: "mdi-file-document" },
-      { title: "Blog", route: "/blog", icon: "mdi-post" },
-      {
-        title: "Consulting Services",
-        route: "/consulting",
-        icon: "mdi-briefcase",
-      },
-    ];
-
-    return {
-      drawer,
-      navigationItems,
-    };
+const drawer = ref(false);
+const navigationItems = [
+  { title: "Home", route: "/", icon: "mdi-home" },
+  { title: "Curriculum Vitae", route: "/cv", icon: "mdi-file-document" },
+  { title: "Blog", route: "/blog", icon: "mdi-post" },
+  {
+    title: "Consulting Services",
+    route: "/consulting",
+    icon: "mdi-briefcase",
   },
-});
+];
 </script>
 
 <style lang="scss" scoped>

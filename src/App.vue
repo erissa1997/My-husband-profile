@@ -15,15 +15,23 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent } from "vue";
-// import AppHeader from "@/components/layout/AppHeader.vue";
-// import AppFooter from "@/components/layout/AppFooter.vue";
+import { onMounted } from "vue";
+import AppHeader from "./components/layout/AppHeader.vue";
+import AppFooter from "./components/layout/AppFooter.vue";
 
-// export default defineComponent({
-//   name: "App",
-//   components: {
-//     AppHeader,
-//     AppFooter,
-//   },
-// });
+onMounted(() => {
+  //document.title = "Professional Profile";
+});
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

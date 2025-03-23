@@ -32,23 +32,12 @@
   </v-footer>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "AppFooter",
-  setup() {
-    const socialIcons = [
-      { name: "LinkedIn", icon: "mdi-linkedin", link: "https://linkedin.com" },
-      { name: "GitHub", icon: "mdi-github", link: "https://github.com" },
-      { name: "Email", icon: "mdi-email", link: "mailto:contact@example.com" },
-    ];
-
-    return {
-      socialIcons,
-    };
-  },
-});
+<script setup lang="ts">
+const socialIcons = [
+  { name: "LinkedIn", icon: "mdi-linkedin", link: "https://linkedin.com" },
+  { name: "GitHub", icon: "mdi-github", link: "https://github.com" },
+  { name: "Email", icon: "mdi-email", link: "mailto:contact@example.com" },
+];
 </script>
 
 <style lang="scss" scoped>
