@@ -12,13 +12,14 @@ export const vuetify = createVuetify({
     defaultTheme: "customTheme",
     themes: {
       customTheme: {
-        dark: false,
+        dark: true,
         colors: {
           primary: colors.deepOrange.base,
-          secondary: colors.deepOrange.darken4,
-          accent: colors.deepOrange.accent3,
-          background: colors.yellow.lighten5,
-          surface: colors.orange.lighten4,
+          secondary: colors.grey.darken3,
+          separator: colors.blueGrey.darken4,
+          accent: colors.deepOrange.darken1,
+          background: colors.grey.darken4,
+          surface: colors.grey.lighten5,
           error: colors.deepOrange.darken3,
           info: colors.lightBlue.base,
           success: colors.green.base,
