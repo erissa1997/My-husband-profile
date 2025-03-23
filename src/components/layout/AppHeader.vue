@@ -1,0 +1,65 @@
+<template>
+  <v-app-bar app color="surface" elevation="1">
+    <v-container class="d-flex align-center">
+      <v-app-bar-title class="text-primary font-weight-bold">
+        <router-link to="/" class="text-decoration-none text-primary">
+          Professional Profile
+        </router-link>
+      </v-app-bar-title>
+
+      <v-spacer />
+
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
+    </v-container>
+  </v-app-bar>
+
+  <!-- Navigation Drawer -->
+  <v-navigation-drawer v-model="drawer" temporary>
+    <v-list>
+      <v-list-item
+        v-for="item in navigationItems"
+        :key="item.title"
+        :to="item.route"
+        @click="drawer = false"
+      >
+        <template v-slot:prepend>
+          <v-icon :icon="item.icon" />
+        </template>
+        <v-list-item-title>{{ item.title }}</v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+
+export default defineComponent({
+  name: "AppHeader",
+  setup() {
+    const drawer = ref(false);
+
+    const navigationItems = [
+      { title: "Home", route: "/", icon: "mdi-home" },
+      { title: "Curriculum Vitae", route: "/cv", icon: "mdi-file-document" },
+      { title: "Blog", route: "/blog", icon: "mdi-post" },
+      {
+        title: "Consulting Services",
+        route: "/consulting",
+        icon: "mdi-briefcase",
+      },
+    ];
+
+    return {
+      drawer,
+      navigationItems,
+    };
+  },
+});
+</script>
+
+<style lang="scss" scoped>
+.v-app-bar {
+  border-bottom: 1px solid rgba($orange, 0.2);
+}
+</style>

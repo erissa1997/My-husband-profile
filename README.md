@@ -15,8 +15,7 @@ profile-website/
 │   ├── components/
 │   │   ├── layout/
 │   │   │   ├── AppFooter.vue
-│   │   │   ├── AppHeader.vue
-│   │   │   └── NavigationBar.vue
+│   │   │   └── AppHeader.vue
 │   │   ├── home/
 │   │   │   ├── ProfileSection.vue
 │   │   │   ├── ExperienceAreas.vue
