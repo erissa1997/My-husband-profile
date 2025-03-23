@@ -3,7 +3,10 @@
     <v-row align="center">
       <v-col cols="12" md="4" class="text-center">
         <v-avatar size="240" class="profile-avatar mb-4">
-          <v-img src="/images/profile-placeholder.jpg" alt="Profile Image" />
+          <v-img
+            src="../../../public/assets/images/sample-profile.jpeg"
+            alt="Profile Image"
+          />
         </v-avatar>
       </v-col>
 
