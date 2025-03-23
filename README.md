@@ -37,9 +37,7 @@ profile-website/
 │   ├── router/
 │   │   └── index.ts
 │   ├── store/
-│   │   ├── index.ts
-│   │   ├── cv.ts
-│   │   └── blog.ts
+│   │   └── index.ts
 │   ├── types/
 │   │   └── index.ts
 │   ├── App.vue
