@@ -3,7 +3,7 @@
     <v-container class="d-flex align-center">
       <v-app-bar-title class="text-primary font-weight-bold">
         <router-link to="/" class="text-decoration-none text-primary">
-          Professional Profile
+          Thomas R Crespo
         </router-link>
       </v-app-bar-title>
 
@@ -49,6 +49,6 @@ const navigationItems = [
 
 <style lang="scss" scoped>
 .v-app-bar {
-  border-bottom: 1px solid rgba(variables.$orange, 0.2);
+  border-bottom: 1px solid rgba(variables.$primary, 0.2);
 }
 </style>

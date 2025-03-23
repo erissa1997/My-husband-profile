@@ -4,23 +4,27 @@
       side="end"
       align="start"
       line-thickness="2"
-      line-color="orange"
+      line-color="primary"
       truncate-line="start"
     >
       <v-timeline-item
         v-for="item in items"
         :key="item.id"
-        dot-color="red-orange"
+        dot-color="primary"
         size="small"
         fill-dot
       >
         <template v-slot:opposite>
-          <div class="text-subtitle-1 font-weight-bold text-orange pt-1">
+          <div class="text-subtitle-1 text-orange pt-1">
             {{ item.date }}
           </div>
         </template>
 
-        <v-card class="mb-4 rounded-lg timeline-card" elevation="2">
+        <v-card
+          class="mb-4 rounded-lg timeline-card"
+          elevation="2"
+          color="background"
+        >
           <v-card-title class="text-deep-red pb-1">{{
             item.title
           }}</v-card-title>
@@ -86,7 +90,6 @@ interface Props {
 }
 const props = defineProps<Props>();
 
-// Track expanded state for each timeline item
 const expandedItems = reactive<Record<string | number, boolean>>({});
 
 // Toggle expanded state

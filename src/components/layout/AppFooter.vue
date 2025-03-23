@@ -42,6 +42,6 @@ const socialIcons = [
 
 <style lang="scss" scoped>
 .v-footer {
-  border-top: 1px solid rgba(variables.$orange, 0.2);
+  border-top: 1px solid rgba(variables.$primary, 0.2);
 }
 </style>
