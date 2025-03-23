@@ -1,0 +1,30 @@
+// Project Color
+$snow: #e8f4fc;
+$orange: #e98e16;
+$vermilion: #cb351a;
+$crimson: #ac0e0d;
+$charcoal: #040606;
+
+// Vuetify theme variables
+$primary: $orange;
+$secondary: $vermilion;
+$accent: $crimson;
+$background: $snow;
+$surface: #ffffff;
+$error: #ff5252;
+$info: #2196f3;
+$success: #4caf50;
+$warning: #ffc107;
+$text: $charcoal;
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+
+// Animation durations
+$transition-fast: 0.2s;
+$transition-medium: 0.3s;
+$transition-slow: 0.5s;

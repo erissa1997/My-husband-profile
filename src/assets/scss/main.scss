@@ -1,0 +1,144 @@
+@use "sass:map";
+@import "./_variables.scss";
+
+// Global styles
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: $snow;
+  color: $charcoal;
+}
+
+// Utility classes
+.text-primary {
+  color: $primary !important;
+}
+.text-secondary {
+  color: $secondary !important;
+}
+.text-accent {
+  color: $accent !important;
+}
+.bg-primary {
+  background-color: $primary !important;
+}
+.bg-secondary {
+  background-color: $secondary !important;
+}
+.bg-accent {
+  background-color: $accent !important;
+}
+.bg-snow {
+  background-color: $snow !important;
+}
+
+// Section styling
+.section {
+  padding: 2rem 0;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: $crimson;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: $vermilion;
+  }
+}
+
+// Animation classes
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity $transition-medium ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: transform $transition-medium ease;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+// Card styling
+.custom-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform $transition-fast, box-shadow $transition-fast;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Timeline styling
+.timeline {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: $orange;
+    transform: translateX(-50%);
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: $crimson;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+// Social icons
+.social-icon {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: $orange;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $crimson;
+  }
+}
+
+// Form styling
+.contact-form {
+  .v-text-field {
+    margin-bottom: 1rem;
+  }
+
+  .v-btn {
+    margin-top: 1rem;
+  }
+}
