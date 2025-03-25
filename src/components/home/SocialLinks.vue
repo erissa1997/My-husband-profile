@@ -22,8 +22,8 @@
 
 <script setup lang="ts">
 const socialLinks = [
-  { name: "LinkedIn", icon: "mdi-linkedin", url: "https://linkedin.com" },
-  { name: "GitHub", icon: "mdi-github", url: "https://github.com" },
-  { name: "Email", icon: "mdi-email", url: "mailto:contact@example.com" },
+  { name: "LinkedIn", icon: "mdi-linkedin", url: "https://linkedin.com/in/thomascrespo" },
+  { name: "GitHub", icon: "mdi-github", url: "https://github.com/thomrc" },
+  { name: "Email", icon: "mdi-email", url: "mailto:thomas@crespo-ai.com" },
 ];
 </script>

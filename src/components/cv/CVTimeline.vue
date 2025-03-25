@@ -88,7 +88,8 @@ import type { TimelineItem } from "../../types/index.ts";
 interface Props {
   items: TimelineItem[];
 }
-const props = defineProps<Props>();
+
+const { items } = defineProps<Props>();
 
 const expandedItems = reactive<Record<string | number, boolean>>({});
 

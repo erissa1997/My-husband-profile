@@ -34,8 +34,8 @@ const router = createRouter({
   routes,
 });
 // Update document title on route change
-router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title} | Thomas Crespo`;
+router.beforeEach((to, _from, next) => {
+  document.title = `${to.meta.title} | Thomás Rodrigues Crespo`;
   next();
 });
 

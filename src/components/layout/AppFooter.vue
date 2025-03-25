@@ -34,8 +34,8 @@
 
 <script setup lang="ts">
 const socialIcons = [
-  { name: "LinkedIn", icon: "mdi-linkedin", link: "https://linkedin.com" },
-  { name: "GitHub", icon: "mdi-github", link: "https://github.com" },
-  { name: "Email", icon: "mdi-email", link: "mailto:contact@example.com" },
+  { name: "LinkedIn", icon: "mdi-linkedin", link: "https://linkedin.com/in/thomascrespo" },
+  { name: "GitHub", icon: "mdi-github", link: "https://github.com/thomrc" },
+  { name: "Email", icon: "mdi-email", link: "mailto:thomas@crespo-ai.com" },
 ];
 </script>

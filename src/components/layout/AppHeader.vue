@@ -2,8 +2,8 @@
   <v-app-bar app color="secondary" elevation="1" class="border-b-thin">
     <v-container class="d-flex align-center">
       <v-app-bar-title class="text-primary font-weight-bold">
-        <router-link to="/" class="text-decoration-none text-primary">
-          Thomas R Crespo
+        <router-link to="/" class="text-decoration-none text-primary text-h4">
+          Crespo AI
         </router-link>
       </v-app-bar-title>
 
@@ -37,12 +37,12 @@ import { ref } from "vue";
 const drawer = ref(false);
 const navigationItems = [
   { title: "Home", route: "/", icon: "mdi-home" },
-  { title: "Curriculum Vitae", route: "/cv", icon: "mdi-file-document" },
-  { title: "Blog", route: "/blog", icon: "mdi-post" },
-  {
-    title: "Consulting Services",
-    route: "/consulting",
-    icon: "mdi-briefcase",
-  },
+  // { title: "Curriculum Vitae", route: "/cv", icon: "mdi-file-document" },
+  // { title: "Blog", route: "/blog", icon: "mdi-post" },
+  // {
+  //   title: "Consulting Services",
+  //   route: "/consulting",
+  //   icon: "mdi-briefcase",
+  // },
 ];
 </script>
